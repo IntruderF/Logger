@@ -16,7 +16,7 @@ namespace LoggerUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CarSelection());
+            Application.Run(new CarSelectionForm());
         }
     }
 }

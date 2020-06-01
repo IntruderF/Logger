@@ -1,6 +1,6 @@
 ﻿namespace LoggerUI
 {
-    partial class CarSelection
+    partial class CarSelectionForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarSelection));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarSelectionForm));
             this.CarSelectionLabel = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.LoadCarButton = new System.Windows.Forms.Button();
             this.CreateCarButton = new System.Windows.Forms.Button();
+            this.RemoveCarButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CarSelectionLabel
@@ -48,7 +49,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(109, 135);
+            this.comboBox1.Location = new System.Drawing.Point(61, 114);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(360, 38);
             this.comboBox1.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             this.LoadCarButton.BackColor = System.Drawing.Color.White;
             this.LoadCarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LoadCarButton.Location = new System.Drawing.Point(210, 194);
+            this.LoadCarButton.Location = new System.Drawing.Point(162, 171);
             this.LoadCarButton.Name = "LoadCarButton";
             this.LoadCarButton.Size = new System.Drawing.Size(158, 62);
             this.LoadCarButton.TabIndex = 2;
@@ -68,19 +69,31 @@
             // 
             this.CreateCarButton.BackColor = System.Drawing.Color.White;
             this.CreateCarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CreateCarButton.Location = new System.Drawing.Point(210, 262);
+            this.CreateCarButton.Location = new System.Drawing.Point(162, 239);
             this.CreateCarButton.Name = "CreateCarButton";
             this.CreateCarButton.Size = new System.Drawing.Size(158, 62);
             this.CreateCarButton.TabIndex = 3;
             this.CreateCarButton.Text = "Create Car";
             this.CreateCarButton.UseVisualStyleBackColor = false;
             // 
-            // CarSelection
+            // RemoveCarButton
+            // 
+            this.RemoveCarButton.BackColor = System.Drawing.Color.White;
+            this.RemoveCarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RemoveCarButton.Location = new System.Drawing.Point(162, 307);
+            this.RemoveCarButton.Name = "RemoveCarButton";
+            this.RemoveCarButton.Size = new System.Drawing.Size(158, 62);
+            this.RemoveCarButton.TabIndex = 4;
+            this.RemoveCarButton.Text = "Remove Car";
+            this.RemoveCarButton.UseVisualStyleBackColor = false;
+            // 
+            // CarSelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.ClientSize = new System.Drawing.Size(484, 381);
+            this.Controls.Add(this.RemoveCarButton);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.CreateCarButton);
             this.Controls.Add(this.LoadCarButton);
@@ -89,8 +102,8 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7);
-            this.Name = "CarSelection";
-            this.Text = "CarSelection";
+            this.Name = "CarSelectionForm";
+            this.Text = "Car Selection";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,5 +115,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button LoadCarButton;
         private System.Windows.Forms.Button CreateCarButton;
+        private System.Windows.Forms.Button RemoveCarButton;
     }
 }

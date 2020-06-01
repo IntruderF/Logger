@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LoggerUI
 {
-    public partial class CarSelection : Form
+    public partial class AddTripForm : Form
     {
-        public CarSelection()
+        public AddTripForm()
         {
             InitializeComponent();
+        }
+
+        private void DateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
