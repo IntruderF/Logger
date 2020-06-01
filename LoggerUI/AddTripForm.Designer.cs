@@ -66,7 +66,6 @@
             this.DateTimePicker.Name = "DateTimePicker";
             this.DateTimePicker.Size = new System.Drawing.Size(152, 38);
             this.DateTimePicker.TabIndex = 3;
-            this.DateTimePicker.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
             // textBox2
             // 
@@ -102,11 +101,12 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(189, 335);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(152, 62);
             this.richTextBox1.TabIndex = 14;
-            this.richTextBox1.Text = "";
+            this.richTextBox1.Text = "Up to 200 characters";
             // 
             // AdditionalInfoLabel
             // 
@@ -211,7 +211,7 @@
             this.Controls.Add(this.AddTrip);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "AddTripForm";
             this.Text = "Add Trip";
             this.ResumeLayout(false);

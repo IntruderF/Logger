@@ -12,19 +12,19 @@ namespace LoggerLibrary
         public Car Car { get; set; }
 
         /// <summary>
+        /// Date of the trip.
+        /// </summary>
+        public string Date { get; set; }
+
+        /// <summary>
         /// Distance traveled.
         /// </summary>
         public double Distance { get; set; }
 
         /// <summary>
-        /// Driving around the city.
+        /// Type of efficiency.
         /// </summary>
-        public bool InCity { get; set; }
-
-        /// <summary>
-        /// Date of the trip.
-        /// </summary>
-        public string Date { get; set; }
+        public string Efficiency { get; set; }
 
         /// <summary>
         /// Additional information (200 characters).

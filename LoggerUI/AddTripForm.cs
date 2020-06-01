@@ -16,10 +16,5 @@ namespace LoggerUI
         {
             InitializeComponent();
         }
-
-        private void DateTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

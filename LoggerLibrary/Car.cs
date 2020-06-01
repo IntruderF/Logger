@@ -17,24 +17,29 @@ namespace LoggerLibrary
         public int Year { get; set; }
 
         /// <summary>
-        /// Actual mileage while entering the car.
+        /// Metric or imperial type of units.
         /// </summary>
-        public double InitialMileage { get; set; }
+        public bool Metric { get; set; }
 
         /// <summary>
-        /// Type of fuel used by the car.
+        /// Actual mileage while entering the car.
         /// </summary>
-        public string Fuel { get; set; }
+        public double Mileage { get; set; }
 
         /// <summary>
         /// Fuel consumption in the city.
         /// </summary>
-        public double InCityConsumption { get; set; }
+        public double EfficiencyCity { get; set; }
 
         /// <summary>
-        /// Fuel consumption outside the city.
+        /// Fuel consumption on the highway.
         /// </summary>
-        public double OutCityConsumption { get; set; }
+        public double EfficiencyHighway { get; set; }
+
+        /// <summary>
+        /// Average fuel consumption combined with EfficiencyCity and EfficiencyHighway.
+        /// </summary>
+        public double EfficiencyCombined { get; set; }
 
         /// <summary>
         /// Trips entered for the car.
