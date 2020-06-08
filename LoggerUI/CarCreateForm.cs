@@ -15,16 +15,22 @@ namespace LoggerUI
         public CarCreateForm()
         {
             InitializeComponent();
-        }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            MetricRadioButton.Checked = true;
         }
 
         private void MetricRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            
+            MileageUnitLabel.Text = "km";
+            FuelEconomyCityUnit.Text = "l/100 km";
+            FuelEconomyHighwayUnit.Text = "l/100 km";
+        }
+
+        private void ImperialRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            MileageUnitLabel.Text = "m";
+            FuelEconomyCityUnit.Text = "gal/100 m";
+            FuelEconomyHighwayUnit.Text = "gal/100 m";
         }
     }
 }

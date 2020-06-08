@@ -7,6 +7,11 @@ namespace LoggerLibrary
     class Car
     {
         /// <summary>
+        /// Unique Id of the car.
+        /// </summary>
+        public int CarId { get; set; }
+
+        /// <summary>
         /// Name of the car.
         /// </summary>
         public string Name { get; set; }

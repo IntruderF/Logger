@@ -32,14 +32,14 @@
             this.CreateCarLabel = new System.Windows.Forms.Label();
             this.CreateCarButton = new System.Windows.Forms.Button();
             this.CarNameLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CarNameTextBox = new System.Windows.Forms.TextBox();
             this.CarYearLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.CarYearTextBox = new System.Windows.Forms.TextBox();
+            this.FuelEconomyCityTextBox = new System.Windows.Forms.TextBox();
             this.FuelEconomyCityLabel = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.CarMileageTextBox = new System.Windows.Forms.TextBox();
             this.CarInitialMileage = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.FuelEconomyHighwayTextBox = new System.Windows.Forms.TextBox();
             this.FuelEconomyHighwayLabel = new System.Windows.Forms.Label();
             this.MetricRadioButton = new System.Windows.Forms.RadioButton();
             this.ImperialRadioButton = new System.Windows.Forms.RadioButton();
@@ -78,14 +78,13 @@
             this.CarNameLabel.Size = new System.Drawing.Size(77, 30);
             this.CarNameLabel.TabIndex = 5;
             this.CarNameLabel.Text = "Name";
-            this.CarNameLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // CarNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(242, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 38);
-            this.textBox1.TabIndex = 6;
+            this.CarNameTextBox.Location = new System.Drawing.Point(242, 94);
+            this.CarNameTextBox.Name = "CarNameTextBox";
+            this.CarNameTextBox.Size = new System.Drawing.Size(242, 38);
+            this.CarNameTextBox.TabIndex = 6;
             // 
             // CarYearLabel
             // 
@@ -96,19 +95,19 @@
             this.CarYearLabel.TabIndex = 7;
             this.CarYearLabel.Text = "Year";
             // 
-            // textBox2
+            // CarYearTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(242, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 38);
-            this.textBox2.TabIndex = 8;
+            this.CarYearTextBox.Location = new System.Drawing.Point(242, 138);
+            this.CarYearTextBox.Name = "CarYearTextBox";
+            this.CarYearTextBox.Size = new System.Drawing.Size(242, 38);
+            this.CarYearTextBox.TabIndex = 8;
             // 
-            // textBox3
+            // FuelEconomyCityTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(242, 266);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(129, 38);
-            this.textBox3.TabIndex = 12;
+            this.FuelEconomyCityTextBox.Location = new System.Drawing.Point(242, 266);
+            this.FuelEconomyCityTextBox.Name = "FuelEconomyCityTextBox";
+            this.FuelEconomyCityTextBox.Size = new System.Drawing.Size(129, 38);
+            this.FuelEconomyCityTextBox.TabIndex = 12;
             // 
             // FuelEconomyCityLabel
             // 
@@ -119,12 +118,12 @@
             this.FuelEconomyCityLabel.TabIndex = 11;
             this.FuelEconomyCityLabel.Text = "Efficiency (city)";
             // 
-            // textBox4
+            // CarMileageTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(242, 222);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 38);
-            this.textBox4.TabIndex = 10;
+            this.CarMileageTextBox.Location = new System.Drawing.Point(242, 222);
+            this.CarMileageTextBox.Name = "CarMileageTextBox";
+            this.CarMileageTextBox.Size = new System.Drawing.Size(190, 38);
+            this.CarMileageTextBox.TabIndex = 10;
             // 
             // CarInitialMileage
             // 
@@ -135,12 +134,12 @@
             this.CarInitialMileage.TabIndex = 9;
             this.CarInitialMileage.Text = "Mileage";
             // 
-            // textBox5
+            // FuelEconomyHighwayTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(242, 310);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(129, 38);
-            this.textBox5.TabIndex = 14;
+            this.FuelEconomyHighwayTextBox.Location = new System.Drawing.Point(242, 310);
+            this.FuelEconomyHighwayTextBox.Name = "FuelEconomyHighwayTextBox";
+            this.FuelEconomyHighwayTextBox.Size = new System.Drawing.Size(129, 38);
+            this.FuelEconomyHighwayTextBox.TabIndex = 14;
             // 
             // FuelEconomyHighwayLabel
             // 
@@ -173,6 +172,7 @@
             this.ImperialRadioButton.TabStop = true;
             this.ImperialRadioButton.Text = "Imperial";
             this.ImperialRadioButton.UseVisualStyleBackColor = true;
+            this.ImperialRadioButton.CheckedChanged += new System.EventHandler(this.ImperialRadioButton_CheckedChanged);
             // 
             // UnitsLabel
             // 
@@ -222,21 +222,21 @@
             this.Controls.Add(this.UnitsLabel);
             this.Controls.Add(this.ImperialRadioButton);
             this.Controls.Add(this.MetricRadioButton);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.FuelEconomyHighwayTextBox);
             this.Controls.Add(this.FuelEconomyHighwayLabel);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.FuelEconomyCityTextBox);
             this.Controls.Add(this.FuelEconomyCityLabel);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.CarMileageTextBox);
             this.Controls.Add(this.CarInitialMileage);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.CarYearTextBox);
             this.Controls.Add(this.CarYearLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CarNameTextBox);
             this.Controls.Add(this.CarNameLabel);
             this.Controls.Add(this.CreateCarButton);
             this.Controls.Add(this.CreateCarLabel);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "CarCreateForm";
             this.Text = "Create Car";
             this.ResumeLayout(false);
@@ -249,14 +249,14 @@
         private System.Windows.Forms.Label CreateCarLabel;
         private System.Windows.Forms.Button CreateCarButton;
         private System.Windows.Forms.Label CarNameLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CarNameTextBox;
         private System.Windows.Forms.Label CarYearLabel;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox CarYearTextBox;
+        private System.Windows.Forms.TextBox FuelEconomyCityTextBox;
         private System.Windows.Forms.Label FuelEconomyCityLabel;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox CarMileageTextBox;
         private System.Windows.Forms.Label CarInitialMileage;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox FuelEconomyHighwayTextBox;
         private System.Windows.Forms.Label FuelEconomyHighwayLabel;
         private System.Windows.Forms.RadioButton MetricRadioButton;
         private System.Windows.Forms.RadioButton ImperialRadioButton;

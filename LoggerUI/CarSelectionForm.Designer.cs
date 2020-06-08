@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarSelectionForm));
             this.CarSelectionLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.SelectCarComboBox = new System.Windows.Forms.ComboBox();
             this.LoadCarButton = new System.Windows.Forms.Button();
             this.CreateCarButton = new System.Windows.Forms.Button();
             this.RemoveCarButton = new System.Windows.Forms.Button();
@@ -46,13 +46,13 @@
             this.CarSelectionLabel.TabIndex = 0;
             this.CarSelectionLabel.Text = "Car Selection";
             // 
-            // comboBox1
+            // SelectCarComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(61, 114);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(360, 38);
-            this.comboBox1.TabIndex = 1;
+            this.SelectCarComboBox.FormattingEnabled = true;
+            this.SelectCarComboBox.Location = new System.Drawing.Point(61, 114);
+            this.SelectCarComboBox.Name = "SelectCarComboBox";
+            this.SelectCarComboBox.Size = new System.Drawing.Size(360, 38);
+            this.SelectCarComboBox.TabIndex = 1;
             // 
             // LoadCarButton
             // 
@@ -94,7 +94,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(484, 381);
             this.Controls.Add(this.RemoveCarButton);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.SelectCarComboBox);
             this.Controls.Add(this.CreateCarButton);
             this.Controls.Add(this.LoadCarButton);
             this.Controls.Add(this.CarSelectionLabel);
@@ -112,7 +112,7 @@
         #endregion
 
         private System.Windows.Forms.Label CarSelectionLabel;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox SelectCarComboBox;
         private System.Windows.Forms.Button LoadCarButton;
         private System.Windows.Forms.Button CreateCarButton;
         private System.Windows.Forms.Button RemoveCarButton;
